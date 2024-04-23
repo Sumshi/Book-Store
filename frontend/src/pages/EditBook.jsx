@@ -42,7 +42,7 @@ const EditBook = () => {
   setLoading(true);
   
   // update data in the server
-  axios.put(`http://localhost:5555/books/${id}`, data)
+  axios.put(`https://book-store-brrd.onrender.com/books/${id}`, data)
   .then(() => {
     setLoading(false);
     navigate('/');

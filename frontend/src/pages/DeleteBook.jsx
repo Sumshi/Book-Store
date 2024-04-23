@@ -15,7 +15,7 @@ const DeleteBook = () => {
 
 const handleDeleteBook = () => {
   setLoading(true);// data is being fetched
-  axios.delete(`http://localhost:5555/books/${id}`)
+  axios.delete(`https://book-store-brrd.onrender.com/books/${id}`)
   .then(() => {
     setLoading(false);
     navigate('/');

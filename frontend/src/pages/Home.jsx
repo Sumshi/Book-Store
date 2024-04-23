@@ -17,7 +17,7 @@ const Home = () => {
   useEffect(() => {
     setLoading(true);// indicates data is being fetched
     // http get request using axios to fetch data
-    axios.get('http://localhost:5555/books')
+    axios.get('https://book-store-brrd.onrender.com/books')
       .then(response => {
         setBooks(response.data.data);
         setLoading(false);
